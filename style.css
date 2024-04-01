@@ -1,0 +1,36 @@
+.navbar-nav .nav-link:hover {
+    color: rgb(71, 169, 235); 
+}
+
+
+/* Example CSS */
+nav {
+    margin: 0;
+    padding: 0;
+}
+/* CSS for small screens (phones) */
+@media (max-width: 576px) {
+    #myCarousel .carousel-item img {
+      max-height: 300px; /* Adjust the maximum height of the images */
+      width: auto; /* Let the width adjust automatically */
+    }
+    
+    #myCarousel .carousel-caption {
+      bottom: 0; /* Align the caption to the bottom of the carousel item */
+    }
+    
+    #myCarousel .carousel-caption .btn {
+      position: absolute; /* Position the button absolutely within the carousel caption */
+      bottom: 20px; /* Adjust the distance from the bottom */
+      font-size: 14px; /* Adjust the font size of the button */
+      padding: 8px 16px; /* Adjust the padding of the button */
+    }
+  }
+  
+  /* Optional: Additional CSS for extra-small screens */
+  @media (max-width: 375px) {
+    #myCarousel .carousel-item img {
+      max-height: 250px; /* Adjust the maximum height further for extra-small screens */
+    }
+  }
+  
