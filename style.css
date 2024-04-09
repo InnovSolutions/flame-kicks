@@ -3,6 +3,17 @@
 }
 
 
+/* Custom CSS */
+.dropdown-menu {
+  background-color: black; /* white background */
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link,
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a:hover {
+  color: rgb(71, 169, 235) !important; /* blue text color */
+}
+
+
 /* Example CSS */
 nav {
     margin: 0;
