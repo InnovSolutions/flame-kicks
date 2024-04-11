@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flame-kicks</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/icons8-shoe-16.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles */
+        main {
+            padding-top: 70px; 
+        }
+    </style>
+</head>
+
+<body>
+    < <section id="header"> 
+        <body>
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+              <symbol id="check2" viewBox="0 0 16 16">
+                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+              </symbol>
+              <symbol id="circle-half" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+              </symbol>
+              <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+              </symbol>
+              <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+              </symbol>
+            </svg>
+        
+            
+            
+        <header data-bs-theme="dark">
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                            class="bi bi-fire" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15" />
+                        </svg>
+              <a class="navbar-brand" href="#">flame-kicks</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Men
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                            <!-- Men's dropdown items -->
+                            <li><a class="dropdown-item" href="#">Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Women
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <!-- Women's dropdown items -->
+                            <li><a class="dropdown-item" href="#">Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Kids
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kidsDropdown">
+                            <!-- Kids' dropdown items -->
+                            <li><a class="dropdown-item" href="#">Clothing</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="apparelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Apparel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="apparelDropdown">
+                            <!-- Apparel dropdown items -->
+                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                            <li><a class="dropdown-item" href="#">Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+            
+                
+                    <button type="button" class="btn btn-outline-primary me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                   
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/adidas-Yeezy-Slide-Salt-Product.png" class="card-img-top" alt="adidas-Yeezy-Slide-Salt">
+                        <div class="card-body">
+                            <p class="card-text">adidas-Yeezy-Slide-Salt</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$90</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-1-High-OG-Spider-Man-Across-the-Spider-Verse-Product.png" class="card-img-top" alt="Air-Jordan-1-High-OG-Spider-Man-Across-the-Spider-Verse">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-1-High-OG-Spider-Man-Across-the-Spider-Verse</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$225</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-1-Retro-High-OG-Chicago-Reimagined-Product.png" class="card-img-top" alt="Air-Jordan-1-Retro-High-OG-Chicago-Reimagined ">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-1-Retro-High-OG-Chicago-Reimagined </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$350</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-1-Retro-High-OG-Chrome-Womens-Product.png" class="card-img-top" alt="Air-Jordan-1-Retro-High-OG-Chrome-Womens">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-1-Retro-High-OG-Chrome-Womens </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$300</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-3-Retro-Craft-Ivory-Product.png" class="card-img-top" alt="Air-Jordan-3-Retro-Craft-Ivory">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-3-Retro-Craft-Ivory</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$270</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-4-Retro-Metallic-Gold-Womens-Product.png" class="card-img-top" alt="Air-Jordan-4-Retro-Metallic-Gold-Womens">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-4-Retro-Metallic-Gold-Womens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$300</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-4-Retro-SB-Pine-Green-Product.png" class="card-img-top" alt="Air-Jordan-4-Retro-SB-Pine-Green">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-4-Retro-SB-Pine-Green</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$360</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-Dunk-Low-Next-Nature-Blue-Tint-Womens-Product.png" class="card-img-top" alt="Nike-Dunk-Low-Next-Nature-Blue-Tint-Womens">
+                        <div class="card-body">
+                            <p class="card-text">Nike-Dunk-Low-Next-Nature-Blue-Tint-Womens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$180</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-Dunk-Low-Polar-Blue-Product.png" class="card-img-top" alt="Nike-Dunk-Low-Polar-Blue">
+                        <div class="card-body">
+                            <p class="card-text">Nike-Dunk-Low-Polar-Blue</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$170</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-Dunk-Low-PRM-Bacon-Womens-Product.png" class="card-img-top" alt="Nike-Dunk-Low-PRM-Bacon-Womens">
+                        <div class="card-body">
+                            <p class="card-text">Nike-Dunk-Low-PRM-Bacon-Womens</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$185</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-Dunk-Low-Retro-White-Black-2021-Product.png" class="card-img-top" alt="Nike-Dunk-Low-Retro-White-Black-2021">
+                        <div class="card-body">
+                            <p class="card-text">Nike-Dunk-Low-Retro-White-Black-2021</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$130</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-Dunk-Low-Triple-Pink-GS-Productjpg.png" class="card-img-top" alt="Nike-Dunk-Low-Triple-Pink-GS">
+                        <div class="card-body">
+                            <p class="card-text">Nike-Dunk-Low-Triple-Pink-GS</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$140</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-SB-Dunk-Low-City-Of-Love-Light-Bone-Product.png" class="card-img-top" alt="Nike-SB-Dunk-Low-City-Of-Love-Light-Bone">
+                        <div class="card-body">
+                            <p class="card-text">Nike-SB-Dunk-Low-City-Of-Love-Light-Bone</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$190</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Nike-SB-Dunk-Low-Premium-Pastoral-Print-Product.png" class="card-img-top" alt="Nike-SB-Dunk-Low-Premium-Pastora">
+                        <div class="card-body">
+                            <p class="card-text">Nike-SB-Dunk-Low-Premium-Pastora</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$190</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="./women shoes-apparel images/Air-Jordan-4-Retro-Thunder-2023-Product.png" class="card-img-top" alt="Air-Jordan-4-Retro-Thunder-202">
+                        <div class="card-body">
+                            <p class="card-text">Air-Jordan-4-Retro-Thunder-2023</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                </div>
+                                <small class="text-muted">$340</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2023–2024 Innov, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
