@@ -5,7 +5,7 @@ workers_dev = true
 
 [site]
 bucket = ["./public","./women accesories","./women shoes-apparel images","./images"]
-pages_build_output_dir = "/public"
+pages_build_output_dir = "build"
 
 [env.production]
 name = "production"
