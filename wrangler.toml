@@ -1,0 +1,11 @@
+name = "flame-kicks"
+type = "webpack"
+account_id = "b8f44bbdacdb28e77e3b029e6dd1bac2"
+workers_dev = true
+
+[site]
+bucket = ["./public","./women accesories","./women shoes-apparel images","./images"]
+
+[env.production]
+name = "production"
+workers_dev = false
