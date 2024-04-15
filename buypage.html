@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +14,8 @@
         }
     </style>
 </head>
-
 <body>
-     <section id="header"> 
+    <section id="header"> 
         <body>
             <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
               <symbol id="check2" viewBox="0 0 16 16">
@@ -61,7 +59,7 @@
                         <ul class="dropdown-menu" aria-labelledby="menDropdown">
                             <!-- Men's dropdown items -->
                             <li><a class="dropdown-item" href="#">Clothing</a></li>
-                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="./shoes.html">Shoes</a></li>
                             <li><a class="dropdown-item" href="#">Accessories</a></li>
                         </ul>
                     </li>
@@ -116,87 +114,38 @@
                     <button type="button" class="btn btn-outline-primary me-2">Login</button>
                    
                 <form class="d-flex" role="search">
-                  <input  id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
               </div>
             </div>
           </nav>
         </header>
+    </section>    
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="./images/airforce1.png" class="card-img-top" alt="Nike Air Force 1">
-                        <div class="card-body">
-                            <p class="card-text">Nike Air Force 1</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                                </div>
-                                <small class="text-muted">$90</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="./images/airmax90.jpeg" class="card-img-top" alt="Nike Air Max 90">
-                        <div class="card-body">
-                            <p class="card-text">Nike Air Max 90</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                                </div>
-                                <small class="text-muted">$120</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="./images/yeezy-boost-350-v2.png" class="card-img-top" alt="Yeezy 350 V2 CMPCT Slate Bone ">
-                        <div class="card-body">
-                            <p class="card-text">Yeezy 350 V2 CMPCT Slate Bone </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                                </div>
-                                <small class="text-muted">$80</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="./images/Air-Jordan-4-Retro-Bred-Reimagin.png" class="card-img-top" alt="Jordan 4 Bread reimagin">
-                        <div class="card-body">
-                            <p class="card-text">Yeezy 350 V2 CMPCT Slate Bone </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                                </div>
-                                <small class="text-muted">$211</small>
-                            </div>
-                        </div>
+        <section id="product-listings">
+            <div class="container">
+                <h2>Product Listings</h2>
+                <!-- Product listings will be dynamically generated here -->
+                <!-- Example product listing -->
+                <div class="product-card">
+                    <img src="product-image.jpg" alt="Product Image">
+                    <div class="product-info">
+                        <h3>Product Name</h3>
+                        <p>Price: $XXX</p>
+                        <a href="product-details.html">View Details</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2023–2024 Innov, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-      <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <!-- Footer -->
+        <!-- Include a footer similar to StockX with links to various sections -->
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
