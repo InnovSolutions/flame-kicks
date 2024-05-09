@@ -78,3 +78,8 @@ nav {
   background-color: #0056b3;
 }
 
+.dropdown-menu.d-none {
+  display: none;
+}
+
+
