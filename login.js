@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = loginForm.querySelector('input[type="password"]').value;
 
         try {
-            const apiUrl = 'https://localhost:7007/api/user/login';
-            const response = await fetch(apiUrl, {
+            const response = await fetch('https://localhost:7007/api/User/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

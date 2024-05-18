@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = registerForm.querySelector('input[name="password"]').value;
 
         try {
-            const apiUrl = 'https://localhost:7007/api/user/register';
+            const apiUrl = 'https://localhost:7007/api/User/register';
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
