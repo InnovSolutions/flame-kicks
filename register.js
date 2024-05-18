@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const loginForm = document.querySelector('.login-form');
+    const registerForm = document.querySelector('.register-form');
 
-    loginForm.addEventListener('submit', async function (event) {
+    registerForm.addEventListener('submit', async function (event) {
         event.preventDefault();
 
-        const username = loginForm.querySelector('input[type="text"]').value;
-        const password = loginForm.querySelector('input[type="password"]').value;
+        const username = registerForm.querySelector('input[name="username"]').value;
+        const email = registerForm.querySelector('input[name="email"]').value;
+        const password = registerForm.querySelector('input[name="password"]').value;
 
         try {
-            const apiUrl = 'https://localhost:7007/api/user/login';
+            const apiUrl = 'https://localhost:7007/api/user/register';
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
@@ -17,17 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 body: JSON.stringify({
                     username: username,
+                    email: email,
                     password: password
                 })
             });
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Login successful:', data);
-                // Redirect or perform other actions for successful login
+                console.log('Registration successful:', data);
+                // Redirect or perform other actions for successful registration
             } else {
-                console.error('Login failed:', response.statusText);
-                // Handle unsuccessful login (e.g., display error message)
+                console.error('Registration failed:', response.statusText);
+                // Handle unsuccessful registration (e.g., display error message)
             }
         } catch (error) {
             console.error('Error:', error);
