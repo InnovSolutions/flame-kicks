@@ -4,33 +4,45 @@ document.addEventListener('DOMContentLoaded', function () {
     loginForm.addEventListener('submit', async function (event) {
         event.preventDefault();
 
-        const username = loginForm.querySelector('input[type="text"]').value;
-        const password = loginForm.querySelector('input[type="password"]').value;
+        const username = loginForm.querySelector('input[placeholder="Username"]').value;
+        const email = loginForm.querySelector('input[placeholder="Email"]').value;
+        const password = loginForm.querySelector('input[placeholder="Password"]').value;
 
         try {
             const response = await fetch('https://localhost:7007/api/User/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer HIYmw2mu_SOnGjqDaZ4FY1epmE_otPT_q3dIqd4a'
                 },
                 body: JSON.stringify({
                     username: username,
+                    email: email,
                     password: password
                 })
             });
 
-            if (response.ok) {
-                const data = await response.json();
-                console.log('Login successful:', data);
-                // Redirect or perform other actions for successful login
+            const contentType = response.headers.get('content-type');
+            let responseBody;
+
+            if (contentType && contentType.indexOf('application/json') !== -1) {
+                responseBody = await response.json();
             } else {
-                console.error('Login failed:', response.statusText);
-                // Handle unsuccessful login (e.g., display error message)
+                responseBody = await response.text();
+            }
+
+            if (response.ok) {
+                console.log('Login successful:', responseBody);
+                // Redirect or perform other actions for successful registration
+                window.location.href = 'index.html'; // change this to your actual path
+            } else {
+                console.error('Login failed:', responseBody);
+                // Handle unsuccessful registration (e.g., display error message)
+                alert('Login failed: ' + responseBody);
             }
         } catch (error) {
             console.error('Error:', error);
             // Handle errors (e.g., network issues)
+            alert('An error occurred: ' + error.message);
         }
     });
 });
